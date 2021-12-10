@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*reset de css, com margens e paddings zerados para todos os elementos; este é um seletor universal:*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+main, nav, #destaque, #contatos {
+	width: 1200px;
+}
+main {
+	overflow: hidden;
+	margin: 110px auto 0 auto;
+	border: solid 1px #7C1A1C;
+}
+	header {
+		width: 1100px;
+		height: 285px;
+		background-color: #086FCF;
+		padding: 50px;
+	}
+header{
+		width:100%;
+		height:0 auto;
+		background-color:#BBBBBB;
+	
+	}
+header>h1 {
+	font-size: 80px;
+	color: #fff;
+	border-bottom: 30px solid #c9a84b;
+	width: 450px;
+	margin-bottom: 10px;
+	margin-top: 100px;
+}
+header>h2 {
+	font-size: 30px;
+	color: #fff;
+	width: 450px;
+	text-align: right;
+	text-transform: uppercase;
+	font-style: oblique;
+}
+nav {
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #086FCF;
+	margin-bottom: 20px;
+	background-color: rgba(255,255,255,0.8); /*colocando a cor rgba para deixar transparente*/
+	position: fixed;      /*menu pronto e fixado com perfeição, Quando mexemos a na página o menu fixa fixo */
+	top: 0;
+	left: 0;
+	z-index: 5000;
+	color: #FFFFFF;
+	text-align: center;
+}
+ul {
+	list-style-type: none;/*retira os marcadores da lista se não fica marcado*/
+}
+ul>li {
+	display: inline-block;/*para fazer com que os itens fiquem na horizontal, ou seja, em linha (inline)*/
+}
+/*estado 'link' é o natural do elemento 'a'*/
+ul>li>a:link {
+	font-size: 50px;
+	color: #086FCF;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	line-height: 83px;
+	display: block;
+	text-decoration: none;/*NUNCA ESQUECER DESTE!!!!*/
+}
+/*estado 'visited' é aquele em que o elemento 'a' já foi clicado*/
+ul>li>a:visited {
+	color: #086FCF;
+	text-decoration: none;
+	color: #FF0017;
+}
+/*estado 'hover' é aquele quando o mouse está sobre o link fica uma setinha*/
+ul>li>a:hover {
+	background-color: #086FCF;
+	color: #fff;
+	text-decoration: none;
+}
+#destaque {
+	height: 600px;
+}
+#trabalhos {
+	height: 750px;
+	width: 1100px;
+	background-color: #C5F5FF;
+	padding: 150px 50px 50px 50px;
+}
+.titulo-secao {
+	font-size: 50px;
+	color: #007cbf;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+#trabalhos .imagem1 {
+	float: left;
+	margin-right: 40px;
+}
+#trabalhos .imagem2 {
+	float: right;
+	margin-left: 40px;
+}
+#trabalhos p {
+	font-size: 25px;
+	color: #393838;
+	text-align: justify;
+	margin-bottom: 100px;
+	line-height: 35px;
+}
+#clientes {
+	height: 490px;
+	width: 1100px;
+	background-color: #c9a84b;
+	padding: 150px 60px 60px 60px;
+}
+#contatos {
+	height: 370px;
+	padding: 100px 50px 50px 50px;
+	width: 1100px;
+}
+#contatos>div>h1 {
+	margin-top: 0;
+}
+#contatos>div {
+	width: 50%;
+	height: 380px;
+	float: left;
+}
+#contatos>div>p {
+	font-size: 32px;
+	color: #27BFF5;
+	text-align: center;
+	width: 380px;
+	line-height: 60px;
+}
+#contatos>form {
+	width: 490px;
+	height: 290px;
+	float: left;
+	background-color: #B4E0F0;
+	padding: 30px;
+}
+label {
+	color: #EC2225;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+input {
+	border: #c93c3e solid 2px;
+	border-radius: 5px;
+	background-color: #B4E0F0;
+	width: 98%;
+	height: 35px;
+	font-size: 30px;
+	color: #086FCF;
+	padding-left: 8px;
+}
+#contatos>form>p {
+	margin-bottom: 25px;
+}
+button {
+	width: 100%;
+	background-color: #C93C3E;
+	border-radius: 50px;
+	height: 60px;
+	font-size: 27px;
+	color: #FFFFFF;
+	cursor: pointer; /*coloca no cursor um botão no cursor indicando que é para clicar*/
+	font-weight: bold;
+}
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: #7C1A1C;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+}
+.botao-sobe { /*classe para a caixa do botão sobe*/
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: rgba(107,16,30,0.4);
+	position: fixed;
+	bottom: 110px;
+	right: 80px;
+	z-index: 800;
+	text-align:center;
+}
+.sobe:link { /*classe para o link do botão sobe*/
+	color:#E9E6E9;
+	
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+ .sobe:sisited {
+ color:#FFFFFF;
+}
+ .sobe:houver {
+	 color:#5384F7;
+}
+

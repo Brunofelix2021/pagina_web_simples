@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="botao-sobe"><a class="sobe" href="#inicio">SOBE</a></div>
+<main>
+
+  <header id="inicio">
+    <h1>Bruno Félix</h1>
+    <h2>Desenvolvedor Web</h2>
+  </header>
+  <nav>
+    <ul>
+      <!--este menu ficará fixo em breve..., por isso, o item 'inicio' deve existir-->
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#trabalhos">Trabalhos</a></li>
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#contatos">contatos</a></li>
+    </ul>
+  </nav>
+  <section id="destaque"> <img src="imagens/destaque-topo.jpg" alt="destaque de trabalhos"> </section>
+  <section id="trabalhos">
+    <h1 class="titulo-secao">Trabalhos</h1>
+    <p><img class="imagem1" src="imagens/trabalho1.jpg" alt="homem digitando no computador"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, tempore, vel error quasi similique doloribus atque voluptate tempora aspernatur non fugiat porro eveniet alias expedita cumque mollitia quo fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, beatae, earum eos dolore placeat velit harum vero ex nam culpa voluptas asperiores tempora ratione a accusantium vel voluptatibus minus quasi.</p>
+    <p><img class="imagem2" src="imagens/trabalho2.jpg" alt="dispositivos com tela de diferentes tamanhos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, non, minima, officiis, quisquam expedita quo laboriosam optio aut ullam obcaecati autem impedit deserunt omnis maiores quas quae porro. Accusantium, id! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, praesentium placeat error eaque aut maxime ex mollitia at tempore assumenda neque fugit earum eos ullam facere. Eligendi, autem eum nulla!</p>
+  </section>
+  <section id="clientes">
+    <h1 class="titulo-secao">Clientes</h1>
+    <img src="imagens/clientes.jpg" alt="logos dos clientes"> </section>
+  <section id="contatos">
+    <div>
+      <h1 class="titulo-secao">Faça contato</h1>
+      <p>Bruno Félix</p>
+      <p>cel. 95432-4125</p>
+      <p>bruno.felix.sousa@hotmail.com</p>
+    </div>
+    <form method="post" action="obrigado.php">
+      <p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome">
+      </p>
+      <p>
+      	<label for="e-mail">E-mail:</label><br>
+        <input type="email" id="e-mail">
+      </p>
+      <p><button>Enviar</button></p>
+    </form>
+  </section>
+</main>
+<footer><h3>Senac Lapa Tito TI-49-Agosto/2016</h3>
+</footer>
+</body>
+</html>
